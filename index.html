@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="resize/resize.nocache.js"></script>
+  </head>
+  <style>
+  .left {
+    width: 20%;
+    height: 100%;
+    float: left;
+  }
+  .center {
+    display: inline-block;
+    width: 60%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .right {
+    width: 20%;
+    height: 100%;
+    float: right;
+  }
+  body {
+    font-family: arial;
+  }
+  .a {
+    color:  #913D00;
+  }
+  .test {
+  }
+  .container {
+    padding: 0px;
+    background: #eee;
+    width: 100%;
+  }
+  .info {
+    position: static;
+    float: right;
+    background: #FDEBDC;
+    border: solid 1px;
+    padding: 2px;
+    font-size: 10px;
+  }
+  textarea {
+    width: 60%;
+    height: 60px;
+  }
+  </style>
+  <body>
+   <div class="info">N/A</div>
+   <div>
+    <div class='center'>
+    <h2>Resize event example.	</h2>
+    <h3>Paragraph (block)</h3>
+    <div class="container">
+      <div class="info">N/A</div>
+      <p class="test">
+        <a href="#" class="add_text">Click this link to add text!</a><br/>
+        <em>Notice that the info box updates immediately, because the resize event is being triggered
+        when the size of the the container changes<code>.resize()</code>.<br/>
+        Resize the browser window to be smaller with the mouse to see info boxes updating.</em>
+      </p>
+    </div>
+
+    <h3>Span (inline)</h3>
+    <div class="container">
+      <div class="info">N/A</div>
+      <p>
+        <span class="test">
+          <a href="#" class="add_text">Click this link to add text!</a><br/>
+          <em>Notice that the info box updates when the container size changes.</em>
+        </span>
+      </p>
+    </div>
+
+    <h3>Textarea (block)</h3>
+    <div class="container">
+      <div class="info">N/A</div>
+<textarea class="test">
+Drag to resize in Safari, Chrome or FF.
+Notice that the info box updates because changes on the size of the textarea size makes the container size change as well.
+</textarea>
+    </div>
+
+    </div>
+    <div class='left'>&nbsp;</div>
+    <div class='right'>&nbsp;</div>
+   </div>
+  </body>
+</html>
