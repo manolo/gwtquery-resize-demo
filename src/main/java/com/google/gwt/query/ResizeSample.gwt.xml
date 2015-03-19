@@ -1,0 +1,8 @@
+<module rename-to="resize">
+    <inherits name='com.google.gwt.query.Query'/>
+    <entry-point class='com.google.gwt.query.client.plugins.ResizeSample'/>
+    <add-linker name="xsiframe"/>
+    <collapse-all-properties value="true" />
+    <set-property name="compiler.stackMode" value="strip" />
+</module>
+
