@@ -42,11 +42,12 @@
     font-size: 10px;
   }
   textarea {
-    width: 400px;
+    width: 60%;
     height: 60px;
   }
   </style>
   <body>
+   <div class="info">N/A</div>
    <div>
     <div class='center'>
     <h2>Resize event example.	</h2>
@@ -54,29 +55,33 @@
     <div class="container">
       <div class="info">N/A</div>
       <p class="test">
-        <a href="#" class="add_text">Click this link to add text!</a> <em>Notice that the info box updates
-        immediately, because the resize event is being triggered manually on click with <code>.resize()</code>. Resize
-        the browser window to be smaller with the mouse to see the info box update more slowly.</em>
+        <a href="#" class="add_text">Click this link to add text!</a><br/>
+        <em>Notice that the info box updates immediately, because the resize event is being triggered
+        when the size of the the container changes<code>.resize()</code>.<br/>
+        Resize the browser window to be smaller with the mouse to see info boxes updating.</em>
       </p>
     </div>
-    
+
     <h3>Span (inline)</h3>
     <div class="container">
       <div class="info">N/A</div>
       <p>
         <span class="test">
-          <a href="#" class="add_text">Click this link to add text!</a> <em>Notice that the info box updates
-        slowly, because the resize event is *not* being triggered manually.</em>
+          <a href="#" class="add_text">Click this link to add text!</a><br/>
+          <em>Notice that the info box updates when the container size changes.</em>
         </span>
       </p>
     </div>
-    
+
     <h3>Textarea (block)</h3>
     <div class="container">
       <div class="info">N/A</div>
-      <textarea class="test">Drag to resize in Safari or Chrome. Notice that the info box updates slowly, because the resize event is *not* being triggered manually. (How could it? You're dragging a proprietary browser control!)</textarea>
+<textarea class="test">
+Drag to resize in Safari, Chrome or FF.
+Notice that the info box updates because changes on the size of the textarea size makes the container size change as well.
+</textarea>
     </div>
-    
+
     </div>
     <div class='left'>&nbsp;</div>
     <div class='right'>&nbsp;</div>
